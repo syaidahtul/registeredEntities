@@ -19,7 +19,6 @@ class CreateEntityTypesTable extends Migration
             $table->string('descriptions');
             $table->boolean('active');
             $table->timestamps();
-            $table->foreign('entity_category_id')->references('id')->on('entity_categories');  
         });
     }
 
